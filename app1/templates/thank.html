@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 40px;
+    background-image: url(https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2hhcml0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.thankyou-container {
+    max-width: 800px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.thankyou-container h1 {
+    margin-bottom: 10px;
+}
+
+
+#header {
+            background-color:white;
+            color:rgb(14, 14, 10);
+            padding: 30px ;
+            text-align: center;
+        }
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+   
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+}
+
+    </style>
+    <title>Thank You - Charity Denotation Platform</title>
+</head>
+<body>
+    <div id="header">
+        <h1> Donate to Charity</h1>
+      <header class="navbar">
+           <nav>
+               <ul>
+                   <li><a href="{% url 'index1' %}">Home</a></li>
+                   <li><a href="{% url 'index6' %}">About</a></li>
+                   <li><a href="{% url 'index3' %}">Signin</a></li>
+                   
+               </ul>
+           </nav>
+       </header>
+   </div>
+   <br><br><br><br><br><br><br><br><br>
+   <center><div class="thankyou-container">
+        <h1>Thank You!</h1>
+        <p>Your contribution has made a meaningful impact.</p>
+        <p>We greatly appreciate your support.</p>
+        
+    </div>
+</center> 
+</body>
+</html>

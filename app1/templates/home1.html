@@ -1,0 +1,155 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Charity home1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            font-size:30px;
+        }
+        #header {
+            color:rgb(20, 8, 8);
+            padding: 10px 0;
+            text-align: center;
+        }
+        #banner {
+            background-image: url("{% static 'cha.jpg' %}");
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #donate-button {
+            background-color:black;
+            color: Turquoise;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        #donate-button:hover {
+            background-color:white;
+            color:black;
+        }
+        #content {
+            padding: 20px;
+        }
+        .cause {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 20px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+        }
+        .cause img {
+            max-width: 100px;
+            margin-right: 20px;
+        }
+        .cause h2 {
+            margin: 0;
+        }
+        .cause p {
+            margin: 10px 0;
+        }
+
+        .cause button {
+            background-color:black;
+            color:white;
+   
+            border: none;
+            border-radius: 2px;
+            font-size: 14px;
+            cursor: pointer;
+            }
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+   
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration:none;
+}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1> Donate to Charity</h1>
+      <header class="navbar">
+           <nav>
+            <ul>
+                <li><a href="{% url 'index1' %}">Home</a></li>
+                <li><a href="{% url 'index6' %}">About</a></li>
+                <li><a href="{% url 'index3' %}">Signin</a></li>
+                
+            </ul>
+           </nav>
+       </header>
+   </div>
+    <div id="banner">
+      <a href="{% url 'index2' %}"><button id="donate-button">Donate Now</button></a>  
+    </div>
+    <div id="content">
+        <div class="cause">
+            <img src="{% static 'edu.jpg' %}" alt="Education Cause">
+            <div>
+                <h2>Education</h2>
+                <p>Help provide quality education to underprivileged children.</p>
+                <a href="{% url 'index2' %}"><button>Donate</button></a>
+            </div>
+        </div>
+        <div class="cause">
+            <img src="{% static 'med.jpg' %}" alt="Healthcare Cause">
+            <div>
+                <h2>Healthcare</h2>
+                <p>Support medical treatment for those in need.</p>
+                <a href="{% url 'index2' %}"><button>Donate</button></a>
+
+            </div>
+        </div>
+        <div class="cause">
+            <img src="{% static 'pov.jpg' %}" alt="Poverty Alleviation">
+            <div>
+                <h2>Poverty Alleviation</h2>
+                <p>Charity-driven aid for poverty relief.</p>
+                <a href="{% url 'index2' %}"><button>Donate</button></a>
+            </div>
+        </div>
+        <div class="cause">
+            <img src="{% static 'env.jpg' %}" alt="Environment">
+            <div>
+                <h2>Environment</h2>
+                <p>Conservation-focused initiatives for environmental welfare.</p>
+                <a href="{% url 'index2' %}"><button>Donate</button></a>
+            </div>
+        </div>
+        <div class="cause">
+            <img src="{% static 'oth.jpg' %}" alt="Environment">
+            <div>
+                <h2>others</h2>
+                <p>Compassion-driven aid for societal betterment.</p>
+                <a href="{% url 'index2' %}"><button>Donate</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
